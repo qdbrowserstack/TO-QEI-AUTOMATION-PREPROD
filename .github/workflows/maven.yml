@@ -27,7 +27,7 @@ jobs:
           echo "BROWSERSTACK_USERNAME=${{ secrets.BROWSERSTACK_USERNAME }}" >> $GITHUB_ENV
           echo "BROWSERSTACK_ACCESS_KEY=${{ secrets.BROWSERSTACK_ACCESS_KEY }}" >> $GITHUB_ENV
           echo "BROWSERSTACK_BUILD_NAME=QEI-PASS-JOB-BUILD" >> $GITHUB_ENV
-          echo "BROWSERSTACK_PROJECT_NAME=TO-QEI-AUTOMATION-WEEKLY" >> $GITHUB_ENV
+          echo "BROWSERSTACK_PROJECT_NAME=Test Priority QD" >> $GITHUB_ENV
           echo "BROWSERSTACK_SESSION_NAME=PASS-JOB-TEST" >> $GITHUB_ENV
 
       - name:  Setup BrowserStack Environment (Test Observability + Respect Static Build Name)
@@ -36,7 +36,7 @@ jobs:
           username: ${{ secrets.BROWSERSTACK_USERNAME }}
           access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
           build-name: QEI-PASS-JOB-BUILD
-          project-name: TO-QEI-AUTOMATION-WEEKLY
+          project-name: Test Priority QD
 
 
       - name: Build and Test with Maven
